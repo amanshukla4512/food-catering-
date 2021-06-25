@@ -1,0 +1,17 @@
+<!DOCTYPE html>   
+<html lang="en">   
+<head>   
+     <title>Login</title>   
+</head>   
+<body><center><h1>  
+	<u>Food Catering Services</u></h1><h2>
+<form method="POST" action="/check/">   
+        {% csrf_token %}   
+        {{ form.as_p }}   
+        <button type="submit">Sign In</button>   
+</form>  
+ 
+<br> 
+<a href="/customreg/">New User?Click here to Sign Up</a> 
+</body>   
+</html>   

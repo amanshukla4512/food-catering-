@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<title>FOOD & STUFF</title>
+{% load static %}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{% static '/css/w3.css' %}">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button">Food catering & Services</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#menu" class="w3-bar-item w3-button">Menu</a>
+      <a href="/login/" class="w3-bar-item w3-button">Login</a>
+      <a href="#member" class="w3-bar-item w3-button">Team Member</a>
+      <a href="#contact"class="w3-bar-item w3-button">Contact</a>
+    </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="{% static '/images/hamburger.jpg' %}" alt="Hamburger Catering" width="1600" height="800">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge">The Catering</h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="{% static '/images/tablesetting2.jpg' %}" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">About Catering</h1><br>
+      <h5 class="w3-center">Tradition since 1995</h5>
+      <p class="w3-large">The Catering was founded in Mumbai by Shukla & Co. near arabian sea shore, we provide services to company employee, school & college going students,professor, teachers and many more .we are providing the services from more than 25 years now . we have won many awards and prizes for best food and services. we are the number 1 in all over mumbai.We only use <span class="w3-tag w3-light-grey">seasonal</span> ingredients.</p>
+      <p class="w3-large w3-text-grey w3-hide-medium">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <!-- Menu Section -->
+  <hr>
+  <hr>
+
+    <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="member">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Team Member</h3>
+    
+  </div>
+
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="{% static '/images/aman.jpg' %}" alt="Aman" style="width:100%">
+      <h3>Aman Shukla</h3>
+      <p class="w3-opacity">CEO & Founder</p>
+      <p>front end and back end</p>
+      <p><a href="https://www.linkedin.com/in/aman-shukla-a9baa1179"><button class="w3-button w3-light-grey w3-block">Contact</button></a></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="{% static '/images/akash.jpg' %}" alt="Akash" style="width:100%">
+      <h3>Akash Bhagat</h3>
+      <p class="w3-opacity">CTO</p>
+      <p>Back end and database</p>
+      <p><a href="https://www.linkedin.com/in/akash-kumar-akay"><button class="w3-button w3-light-grey w3-block">Contact</button></a></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="{% static '/images/abhinav.jpg' %}" alt="Abhinav" style="width:100%">
+      <h3>Abhinav Gautam</h3>
+      <p class="w3-opacity">advisory</p>
+      <p>giving advises on issues.</p>
+      <p><a href="https://www.linkedin.com/in/abhinav-raj-gautam-728699176"><button class="w3-button w3-light-grey w3-block">Contact</button></a></p>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img src="{% static '/images/atri.jpg' %}" alt="Atri" style="width:100%">
+      <h3>Atri Adhikari</h3>
+      <p class="w3-opacity">consultant</p>
+      <p>giving advices on issues.</p>
+      <p><a href="https://www.linkedin.com/in/atri-adhikari-61a31416b"><button class="w3-button w3-light-grey w3-block">Contact</button></a></p>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-64" id="contact">
+    <h1>Contact</h1><br>
+    <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+    <p class="w3-text-blue-grey w3-large"><b>Catering Service, Near Arabian Sea Shore Mumbai</b></p>
+    <p>or we can inform you about our exclusive offers, just fill your details here</p>
+    <form method="POST" action="/sendmail/">
+      {% csrf_token  %}
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="email" placeholder="Please write your email here" required name="Email" 
+        id="id_Email"></p>
+      <p><button class="w3-button w3-light-grey w3-section" type="submit">SEND </button></p>
+    </form>
+  </div>
+  
+<!-- End page content -->
+</div>
+
+
+</body>
+</html>
